@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Aibolat Amanzholov | Photography</title>
+  </head>
+  <body>
+    <nav>
+      <div class="nav__header">
+        <div class="nav__logo">
+          <a href="#">AIBOLAT</a>
+        </div>
+        <div class="nav__menu__btn" id="menu-btn">
+          <i class="ri-menu-3-line"></i>
+        </div>
+      </div>
+      <ul class="nav__links" id="nav-links">
+        <li><a href="#home" data-i18n="nav.home">Home</a></li>
+        <li><a href="#about" data-i18n="nav.about">About</a></li>
+        <li><a href="#portfolio" data-i18n="nav.portfolio">Portfolio</a></li>
+        <li><a href="#pricing" data-i18n="nav.pricing">Pricing</a></li>
+        <li><a href="#contact" data-i18n="nav.contact">Contact</a></li>
+      </ul>
+      <div class="lang-switcher" id="lang-switcher">
+        <button class="lang-switcher__current" id="lang-btn">
+          <span id="lang-label">EN</span>
+          <i class="ri-global-line"></i>
+        </button>
+        <div class="lang-switcher__dropdown" id="lang-dropdown">
+          <button data-lang="en" class="lang-option active">English</button>
+          <button data-lang="ru" class="lang-option">Русский</button>
+          <button data-lang="kz" class="lang-option">Қазақша</button>
+        </div>
+      </div>
+    </nav>
+
+    <header id="home" class="hero-3d">
+      <!-- 3D Scene Container -->
+      <div class="hero-scene" id="hero-scene">
+        <!-- Background Layer -->
+        <div class="hero-bg-layer" data-depth="0.1">
+          <div class="hero-grid"></div>
+        </div>
+        
+        <!-- Floating 3D Cards -->
+        <div class="hero-cards-layer" data-depth="0.3">
+          <div class="hero-card hero-card--1" data-depth="0.4">
+            <img src="photos/1.jpg" alt="Wedding photo">
+          </div>
+          <div class="hero-card hero-card--2" data-depth="0.5">
+            <img src="photos/2.jpg" alt="Portrait" />
+          </div>
+          <div class="hero-card hero-card--3" data-depth="0.6">
+            <img src="photos/3.jpg" alt="Event" />
+          </div>
+        </div>
+        
+        <!-- Content Layer -->
+        <div class="hero-content-layer" data-depth="0.2">
+          <div class="hero-content-inner">
+            <div class="hero-badge-new" data-i18n="header.badge">PHOTOGRAPHER</div>
+            <h1 class="hero-title-3d">
+              <span class="hero-word" data-char-wrap>Aibolat</span>
+              <span class="hero-word hero-word--accent" data-char-wrap>Amanzholov</span>
+            </h1>
+            <p class="hero-tagline" data-i18n="header.description">
+              Professional photography services in Kazakhstan
+            </p>
+            <div class="hero-cta">
+              <a href="#contact" class="btn btn--primary-3d" data-i18n="header.hire">
+                <span>Book Session</span>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M5 12h14M12 5l7 7-7 7"/>
+                </svg>
+              </a>
+              <a href="#portfolio" class="btn btn--ghost" data-i18n="header.portfolio">View Works</a>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Floating Elements -->
+        <div class="hero-floaters">
+          <div class="hero-floater hero-floater--1" data-depth="0.7"></div>
+          <div class="hero-floater hero-floater--2" data-depth="0.8"></div>
+          <div class="hero-floater hero-floater--3" data-depth="0.5"></div>
+        </div>
+      </div>
+      
+      <!-- Scroll Indicator -->
+      <div class="hero-scroll-indicator">
+        <div class="hero-scroll-text" data-i18n="header.scroll">Scroll</div>
+        <div class="hero-scroll-line"></div>
+      </div>
+    </header>
+
+    <section class="scroll-gallery" id="portfolio">
+      <div class="scroll-gallery__header">
+        <h2 class="section__header" data-scroll="fade-up" data-i18n="portfolio.title">Portfolio</h2>
+        <p class="portfolio__subtitle" data-scroll="fade-up" data-scroll-delay="200" data-i18n="portfolio.subtitle">Selected works from weddings, events, and portrait sessions</p>
+      </div>
+      <div class="scroll-gallery__viewport">
+      <div class="scroll-gallery__track">
+        <div class="scroll-gallery__item" data-category="wedding">
+          <div class="scroll-gallery__item-inner">
+            <img src="https://images.unsplash.com/photo-1519741497674-611481863552?w=600&h=800&fit=crop&q=80" alt="Wedding photography" />
+            <div class="scroll-gallery__item-label"><span data-i18n="portfolio.wedding">Wedding</span></div>
+          </div>
+        </div>
+        <div class="scroll-gallery__item" data-category="portrait">
+          <div class="scroll-gallery__item-inner">
+            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600&h=800&fit=crop&q=80" alt="Portrait photography" />
+            <div class="scroll-gallery__item-label"><span data-i18n="portfolio.portrait">Portrait</span></div>
+          </div>
+        </div>
+        <div class="scroll-gallery__item" data-category="event">
+          <div class="scroll-gallery__item-inner">
+            <img src="https://images.unsplash.com/photo-1511795409834-ef04bbd61622?w=600&h=800&fit=crop&q=80" alt="Event photography" />
+            <div class="scroll-gallery__item-label"><span data-i18n="portfolio.event">Event</span></div>
+          </div>
+        </div>
+        <div class="scroll-gallery__item" data-category="wedding">
+          <div class="scroll-gallery__item-inner">
+            <img src="https://images.unsplash.com/photo-1606216794074-735e91aa2c92?w=600&h=800&fit=crop&q=80" alt="Wedding photography" />
+            <div class="scroll-gallery__item-label"><span data-i18n="portfolio.wedding">Wedding</span></div>
+          </div>
+        </div>
+        <div class="scroll-gallery__item" data-category="portrait">
+          <div class="scroll-gallery__item-inner">
+            <img src="https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?w=600&h=800&fit=crop&q=80" alt="Portrait photography" />
+            <div class="scroll-gallery__item-label"><span data-i18n="portfolio.portrait">Portrait</span></div>
+          </div>
+        </div>
+        <div class="scroll-gallery__item" data-category="event">
+          <div class="scroll-gallery__item-inner">
+            <img src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=600&h=800&fit=crop&q=80" alt="Event photography" />
+            <div class="scroll-gallery__item-label"><span data-i18n="portfolio.event">Event</span></div>
+          </div>
+        </div>
+        <div class="scroll-gallery__item" data-category="wedding">
+          <div class="scroll-gallery__item-inner">
+            <img src="https://images.unsplash.com/photo-1583939003579-730e3918a45a?w=600&h=800&fit=crop&q=80" alt="Wedding photography" />
+            <div class="scroll-gallery__item-label"><span data-i18n="portfolio.wedding">Wedding</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="scroll-gallery__speed-bar">
+        <div class="scroll-gallery__speed-fill"></div>
+      </div>
+      </div>
+    </section>
+
+    <!-- Custom cursor for gallery -->
+    <div class="gallery-cursor" id="gallery-cursor">
+      <i class="ri-arrow-right-line"></i>
+    </div>
+
+    <section class="section__container about__container" id="about">
+      <div class="about__image" data-scroll="fade-right">
+        <div class="about__image-wrapper">
+          <img src="https://images.unsplash.com/photo-1554048612-b6a482bc67e5?w=600&h=750&fit=crop&q=80" alt="Aibolat Amanzholov" />
+          <div class="about__image-glow"></div>
+        </div>
+      </div>
+      <div class="about__content" data-scroll="fade-left" data-scroll-delay="200">
+        <h2 class="section__header" data-i18n="about.title">About Me</h2>
+        <p data-i18n="about.p1">
+          I am Aibolat Amanzholov, a professional photographer based in Kazakhstan, specializing in wedding, event, and portrait photography. My goal is to capture genuine emotions and create timeless images that tell your unique story.
+        </p>
+        <p data-i18n="about.p2">
+          With years of experience and a keen eye for detail, I bring artistic vision and technical excellence to every project. Each photograph is carefully processed with my signature artistic style.
+        </p>
+        <div class="about__btn">
+          <a href="#portfolio" class="btn btn--glow" data-i18n="about.btn">VIEW MY WORKS</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox">
+      <button class="lightbox__close" id="lightbox-close"><i class="ri-close-line"></i></button>
+      <button class="lightbox__prev" id="lightbox-prev"><i class="ri-arrow-left-s-line"></i></button>
+      <button class="lightbox__next" id="lightbox-next"><i class="ri-arrow-right-s-line"></i></button>
+      <div class="lightbox__content">
+        <img id="lightbox-img" src="" alt="Gallery photo" />
+      </div>
+    </div>
+
+    <section class="pricing" id="pricing">
+      <div class="section__container pricing__container">
+        <h2 class="section__header" data-scroll="fade-up" data-i18n="pricing.title">Pricing</h2>
+        <p class="pricing__subtitle" data-scroll="fade-up" data-scroll-delay="100" data-i18n="pricing.subtitle">Wedding photography packages tailored to your needs</p>
+
+        <!-- Wedding Packages -->
+        <div class="pricing__grid" data-scroll-stagger>
+          <div class="pricing__card">
+            <div class="pricing__card-glow"></div>
+            <h3 data-i18n="pricing.standart.name">Standart</h3>
+            <p class="pricing__tagline" data-i18n="pricing.standart.tagline">For intimate celebrations and banquet part</p>
+            <div class="pricing__price">300.000 <span>KZT</span></div>
+            <ul class="pricing__features">
+              <li><i class="ri-check-line"></i> <span data-i18n="pricing.standart.f1">1 professional photographer</span></li>
+              <li><i class="ri-check-line"></i> <span data-i18n="pricing.standart.f2">6 hours of shooting</span></li>
+              <li><i class="ri-check-line"></i> <span data-i18n="pricing.standart.f3">300-500 photos in artistic processing</span></li>
+              <li><i class="ri-check-line"></i> <span data-i18n="pricing.standart.f4">Personal online gallery</span></li>
+              <li><i class="ri-check-line"></i> <span data-i18n="pricing.standart.f5">Photos ready within a month</span></li>
+              <li><i class="ri-check-line"></i> <span data-i18n="pricing.standart.f6">Backup storage for 12 months</span></li>
+            </ul>
+            <a href="#contact" class="btn btn--outline" data-i18n="pricing.book">Book Now</a>
+          </div>
+
+          <div class="pricing__card pricing__card--featured">
+            <div class="pricing__card-glow pricing__card-glow--featured"></div>
+            <div class="pricing__badge" data-i18n="pricing.popular">Popular</div>
+            <h3 data-i18n="pricing.elite.name">Elite</h3>
+            <p class="pricing__tagline" data-i18n="pricing.elite.tagline">The ideal solution for a full wedding day</p>
+            <div class="pricing__price">500.000 <span>KZT</span></div>
+            <ul class="pricing__features">
+              <li><i class="ri-check-line"></i> <span data-i18n="pricing.elite.f1">Full wedding day</span></li>
+              <li><i class="ri-check-line"></i> <span data-i18n="pricing.elite.f2">2 professional photographers</span></li>
+              <li><i class="ri-check-line"></i> <span data-i18n="pricing.elite.f3">Shooting throughout the entire day</span></li>
+              <li><i class="ri-check-line"></i> <span data-i18n="pricing.elite.f4">600-800 photos in artistic processing</span></li>
+              <li><i class="ri-check-line"></i> <span data-i18n="pricing.elite.f5">Online gallery for you and guests</span></li>
+              <li><i class="ri-check-line"></i> <span data-i18n="pricing.elite.f6">QR code for guests during banquet</span></li>
+              <li><i class="ri-check-line"></i> <span data-i18n="pricing.elite.f7">Backup storage for 12 months</span></li>
+            </ul>
+            <a href="#contact" class="btn btn--glow" data-i18n="pricing.book">Book Now</a>
+          </div>
+
+          <div class="pricing__card">
+            <div class="pricing__card-glow"></div>
+            <h3 data-i18n="pricing.premium.name">Premium</h3>
+            <p class="pricing__tagline" data-i18n="pricing.premium.tagline">Maximum comfort and flawless results</p>
+            <div class="pricing__price">800.000 <span>KZT</span></div>
+            <ul class="pricing__features">
+              <li><i class="ri-check-line"></i> <span data-i18n="pricing.premium.f1">Full wedding day</span></li>
+              <li><i class="ri-check-line"></i> <span data-i18n="pricing.premium.f2">3 professional photographers</span></li>
+              <li><i class="ri-check-line"></i> <span data-i18n="pricing.premium.f3">800-1200 photos in artistic processing</span></li>
+              <li><i class="ri-check-line"></i> <span data-i18n="pricing.premium.f4">Online gallery for you and guests</span></li>
+              <li><i class="ri-check-line"></i> <span data-i18n="pricing.premium.f5">QR code for guests during banquet</span></li>
+              <li><i class="ri-check-line"></i> <span data-i18n="pricing.premium.f6">Premium photobook 30x30cm, 15 spreads</span></li>
+              <li><i class="ri-check-line"></i> <span data-i18n="pricing.premium.f7">Backup storage for 12 months</span></li>
+            </ul>
+            <a href="#contact" class="btn btn--outline" data-i18n="pricing.book">Book Now</a>
+          </div>
+        </div>
+
+        <!-- Individual Session -->
+        <div class="pricing__individual">
+          <div class="pricing__individual-card">
+            <div class="pricing__card-glow"></div>
+            <h3 data-i18n="pricing.individual.name">Individual Photosession</h3>
+            <div class="pricing__price">70.000 <span>KZT</span></div>
+            <ul class="pricing__features pricing__features--inline">
+              <li><i class="ri-check-line"></i> <span data-i18n="pricing.individual.f1">1 hour of shooting</span></li>
+              <li><i class="ri-check-line"></i> <span data-i18n="pricing.individual.f2">50-100 photos in artistic processing</span></li>
+              <li><i class="ri-check-line"></i> <span data-i18n="pricing.individual.f3">10 photos with detailed retouching</span></li>
+              <li><i class="ri-check-line"></i> <span data-i18n="pricing.individual.f4">Online gallery</span></li>
+              <li><i class="ri-check-line"></i> <span data-i18n="pricing.individual.f5">Photos ready in 2-3 days</span></li>
+              <li><i class="ri-check-line"></i> <span data-i18n="pricing.individual.f6">Studio rental paid separately</span></li>
+            </ul>
+            <a href="#contact" class="btn btn--glow" data-i18n="pricing.bookSession">Book Session</a>
+          </div>
+        </div>
+
+        <!-- Additional Services -->
+        <div class="pricing__extras">
+          <h3 data-i18n="pricing.extras.title">Additional Services</h3>
+          <div class="pricing__extras-grid">
+            <div class="pricing__extra-item">
+              <span class="pricing__extra-name" data-i18n="pricing.extras.e1">Photobook 30x30cm</span>
+              <span class="pricing__extra-price">150.000 KZT</span>
+            </div>
+            <div class="pricing__extra-item">
+              <span class="pricing__extra-name" data-i18n="pricing.extras.e2">Second photographer</span>
+              <span class="pricing__extra-price">150.000 KZT</span>
+            </div>
+            <div class="pricing__extra-item">
+              <span class="pricing__extra-name" data-i18n="pricing.extras.e3">Family photosession</span>
+              <span class="pricing__extra-price">150.000 KZT</span>
+            </div>
+            <div class="pricing__extra-item">
+              <span class="pricing__extra-name" data-i18n="pricing.extras.e4">QR service</span>
+              <span class="pricing__extra-price">150.000 KZT</span>
+            </div>
+            <div class="pricing__extra-item">
+              <span class="pricing__extra-name" data-i18n="pricing.extras.e5">Express processing (1 week)</span>
+              <span class="pricing__extra-price">100.000 KZT</span>
+            </div>
+            <div class="pricing__extra-item">
+              <span class="pricing__extra-name" data-i18n="pricing.extras.e6">Individual flash box</span>
+              <span class="pricing__extra-price">50.000 KZT</span>
+            </div>
+            <div class="pricing__extra-item">
+              <span class="pricing__extra-name" data-i18n="pricing.extras.e7">Hourly shooting (min 3 hours)</span>
+              <span class="pricing__extra-price">50.000 KZT</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Important Info -->
+        <div class="pricing__info" data-scroll="fade-up">
+          <h3 data-i18n="pricing.info.title">Important Information</h3>
+          <ul>
+            <li data-i18n-html="pricing.info.i1">Your date is reserved with a deposit of <strong>50.000 KZT</strong>.</li>
+            <li data-i18n-html="pricing.info.i2">The deposit is <strong>non-refundable</strong>.</li>
+            <li data-i18n="pricing.info.i3">The remaining balance is paid in cash on the day of the shoot.</li>
+            <li data-i18n-html="pricing.info.i4">Additional hour: <strong>50.000 KZT</strong>.</li>
+            <li data-i18n="pricing.info.i5">You receive a download link for finished photos.</li>
+            <li data-i18n="pricing.info.i6">All photos are in the author's processing, without original files.</li>
+            <li data-i18n="pricing.info.i7">Events in other cities of Kazakhstan and abroad require additional transfer and accommodation at the expense of the inviting party.</li>
+          </ul>
+        </div>
+
+        <!-- Rider -->
+        <div class="pricing__rider" data-scroll="fade-up" data-scroll-delay="200">
+          <h3 data-i18n="pricing.rider.title">Technical Rider (Other Cities)</h3>
+          <ul>
+            <li data-i18n="pricing.rider.r1">Round-trip flight to the destination is paid (Air Astana)</li>
+            <li data-i18n="pricing.rider.r2">Airport transfer is paid</li>
+            <li data-i18n="pricing.rider.r3">Hotel + breakfast is paid (if the trip exceeds 12 hours)</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <div class="section__container contact__container">
+        <div class="contact__content" data-scroll="fade-right">
+          <h2 class="section__header" data-i18n="contact.title">Book a Photoshoot</h2>
+          <p data-i18n="contact.desc">
+            To book a shoot, fill out the contact form and I will get back to you shortly.
+          </p>
+          <form action="/">
+            <div class="input__row">
+              <input type="text" data-i18n-placeholder="contact.name" placeholder="Your Name" />
+              <input type="text" data-i18n-placeholder="contact.email" placeholder="Your Email" />
+            </div>
+            <input type="text" data-i18n-placeholder="contact.type" placeholder="Shooting type (Wedding / Portrait / Event)" />
+            <textarea data-i18n-placeholder="contact.message" placeholder="Your Message" rows="3"></textarea>
+            <button class="btn btn--glow" type="submit" data-i18n="contact.send">SEND</button>
+          </form>
+        </div>
+        <div class="contact__image" data-scroll="fade-left" data-scroll-delay="200">
+          <img src="https://images.unsplash.com/photo-1452587925148-ce544e77e70d?w=600&h=800&fit=crop&q=80" alt="contact" />
+          <div class="contact__image-glow"></div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="section__container footer__container" data-scroll-stagger>
+        <div class="footer__col">
+          <div class="footer__logo">AIBOLAT</div>
+          <p data-i18n="footer.desc">
+            Professional photographer in Kazakhstan. Weddings, events, portraits.
+          </p>
+        </div>
+        <div class="footer__col">
+          <h4 data-i18n="footer.links">Quick Links</h4>
+          <ul class="footer__links">
+            <li><a href="#home" data-i18n="nav.home">Home</a></li>
+            <li><a href="#about" data-i18n="nav.about">About</a></li>
+            <li><a href="#portfolio" data-i18n="nav.portfolio">Portfolio</a></li>
+            <li><a href="#pricing" data-i18n="nav.pricing">Pricing</a></li>
+            <li><a href="#contact" data-i18n="nav.contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4 data-i18n="footer.follow">Follow Me</h4>
+          <ul class="footer__socials">
+            <li>
+              <a href="#" aria-label="Instagram"><i class="ri-instagram-line"></i></a>
+            </li>
+            <li>
+              <a href="#" aria-label="Telegram"><i class="ri-telegram-fill"></i></a>
+            </li>
+            <li>
+              <a href="#" aria-label="WhatsApp"><i class="ri-whatsapp-line"></i></a>
+            </li>
+            <li>
+              <a href="#" aria-label="YouTube"><i class="ri-youtube-fill"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bar">
+        &copy; 2026 Aibolat Amanzholov Photography. All rights reserved.
+      </div>
+    </footer>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
